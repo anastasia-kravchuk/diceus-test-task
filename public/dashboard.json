@@ -1,9 +1,4 @@
 {
-  "summary": {
-    "userName": "Arthur",
-    "openTasksCount": 12
-  },
-
   "workQueue": {
     "tabs": [
       { "id": "assigned", "label": "Assigned to me", "count": 12 },
