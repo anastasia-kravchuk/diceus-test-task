@@ -1,0 +1,198 @@
+{
+  "summary": {
+    "userName": "Arthur",
+    "openTasksCount": 12
+  },
+
+  "workQueue": {
+    "tabs": [
+      { "id": "assigned", "label": "Assigned to me", "count": 12 },
+      { "id": "pending", "label": "Pending Review", "count": 8 }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "originator": { "name": "Sam Masters", "initials": "SM" },
+        "client": "NAMEX Tech Solutions",
+        "line": "Cyber Liability",
+        "type": "Underwriter Referral",
+        "status": "New",
+        "createdAt": "2025-04-16"
+      },
+      {
+        "id": 2,
+        "originator": { "name": "Annalise Willis", "initials": "AW" },
+        "client": "Maritime Logistics Corp",
+        "line": "Marine Cargo",
+        "type": "Underwriter Referral",
+        "status": "New",
+        "createdAt": "2025-04-20"
+      },
+      {
+        "id": 3,
+        "originator": { "name": "Patrick Devenport", "initials": "PD" },
+        "client": "GreenField Energy Ltd",
+        "line": "Environmental",
+        "type": "Loss Control Request",
+        "status": "New",
+        "createdAt": "2025-04-16"
+      },
+      {
+        "id": 4,
+        "originator": { "name": "Anna Killian", "initials": "AK" },
+        "client": "NorthStar Financial Group",
+        "line": "D&O Liability",
+        "type": "Underwriter Referral",
+        "status": "Pending Review",
+        "createdAt": "2025-04-22"
+      },
+      {
+        "id": 5,
+        "originator": { "name": "Anna Killian", "initials": "AK" },
+        "client": "Alliance Healthcare Systems",
+        "line": "Medical Malpractice",
+        "type": "Email",
+        "status": "Completed",
+        "createdAt": "2025-04-28"
+      }
+    ]
+  },
+
+  "portfolioGoals": [
+    {
+      "id": "lossRatio",
+      "type": "gauge",
+      "label": "Portfolio Loss Ratio Target",
+      "current": 48.2,
+      "target": 55,
+      "unit": "%",
+      "delta": -6.8,
+      "status": "Good"
+    },
+    {
+      "id": "retention",
+      "type": "gauge",
+      "label": "Renewal Retention",
+      "current": 88,
+      "targetRange": [85, 90],
+      "unit": "%",
+      "status": "On target"
+    },
+    {
+      "id": "newBusiness",
+      "type": "progress",
+      "label": "New Business Target",
+      "current": 8100000,
+      "target": 12000000,
+      "unit": "USD"
+    },
+    {
+      "id": "annualGwp",
+      "type": "progress",
+      "label": "Annual GWP Target",
+      "current": 28400000,
+      "target": 42000000,
+      "unit": "USD"
+    }
+  ],
+
+  "quickActions": [
+    { "id": 1, "label": "New Submission" },
+    { "id": 2, "label": "Quote Builder" },
+    { "id": 3, "label": "Risk Models" },
+    { "id": 4, "label": "Upload Documents" }
+  ],
+
+  "marketIntelligence": [
+    {
+      "id": 1,
+      "severity": "High",
+      "text": "Rate hardening in Cyber market: +15% YoY"
+    },
+    {
+      "id": 2,
+      "severity": "Medium",
+      "text": "New capacity entering Marine market"
+    },
+    {
+      "id": 3,
+      "severity": "Low",
+      "text": "Environmental regulatory changes in California"
+    }
+  ],
+
+  "myAccounts": [
+    {
+      "id": 1,
+      "name": "NAMEX Tech Solutions",
+      "segment": "Large Enterprise",
+      "line": "D&O Liability",
+      "broker": "Willis Towers Watson",
+      "renewalDate": "2025-04-16",
+      "premium": "$2.3M",
+      "ratedPremium": "$2.8M",
+      "lossRatio": "32%",
+      "appetite": "High",
+      "status": "Active",
+      "triageScore": 180,
+      "winnability": {
+        "score": 4,
+        "label": "Very Strong"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Alliance Healthcare Systems",
+      "segment": "Mid-Market",
+      "line": "Medical Malpractice",
+      "broker": "Aon Risk",
+      "renewalDate": "2025-06-30",
+      "premium": "$1.7M",
+      "ratedPremium": "$1.9M",
+      "lossRatio": "38%",
+      "appetite": "Medium",
+      "status": "Under review",
+      "triageScore": 165,
+      "winnability": {
+        "score": 4,
+        "label": "Strong"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Maritime Logistics Corp",
+      "segment": "Shipping / Logistics",
+      "line": "Marine Cargo",
+      "broker": "Marsh McLennan",
+      "renewalDate": "2025-09-05",
+      "premium": "$875K",
+      "ratedPremium": "$920K",
+      "lossRatio": "25%",
+      "appetite": "High",
+      "status": "Active",
+      "triageScore": 182,
+      "winnability": {
+        "score": 4,
+        "label": "Very Strong"
+      }
+    },
+    {
+      "id": 4,
+      "name": "GreenField Energy Ltd",
+      "segment": "Entry Sector",
+      "line": "Environmental Liability",
+      "broker": "Aon Risk",
+      "renewalDate": "2025-07-22",
+      "premium": "$1.2M",
+      "ratedPremium": "$1.4M",
+      "lossRatio": "67%",
+      "appetite": "Cautious",
+      "status": "Under review",
+      "triageScore": 158,
+      "winnability": {
+        "score": 3,
+        "label": "Medium"
+      }
+    }
+  ]
+}
