@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: $color-bg-surface;
+  border-radius: $radius-lg;
+  padding: 0 16px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+
+    font-family: $font-base;
+    font-size: 14px;
+    color: $color-heading;
+
+    &::placeholder {
+      color: $color-text;
+    }
+  }
+}
