@@ -1,7 +1,25 @@
+import { Route, Routes } from 'react-router-dom';
+import { Dashboard } from './pages/Dashboard';
+import { Account } from './pages/Account';
+import { NotFound } from './pages/NotFound';
+
 function App() {
   return (
-    <p>Hello</p>
-  )
+    <Routes>
+      <Route
+        path="/"
+        element={<Dashboard />}
+      />
+      <Route
+        path="/account"
+        element={<Account />}
+      />
+      <Route
+        path="*"
+        element={<NotFound />}
+      />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
