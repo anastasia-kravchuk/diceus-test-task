@@ -1,0 +1,50 @@
+@use '../../../styles/variables.scss' as *;
+
+.app-header {
+  width: 100%;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px 24px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    color: $color-heading;
+    font-size: 18px;
+  }
+
+  &__brake {
+    display: none;
+  }
+
+  &__right {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $logo-color;
+    color: $color-heading;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    &__left {
+      font-size: 14px;
+    }
+    &__brake {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use '../../styles/variables' as *;
+
+.nav-tabs {
+  width: 100%;
+  border-top: 1px solid $color-main-border;
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 12px 24px;
+
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.nav-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid $color-main-border;
+  text-decoration: none;
+  background: $color-bg-inactive;
+  color: $color-heading;
+
+  &__label {
+    color: $color-heading;
+  }
+
+  &__icon {
+    svg {
+      color: $color-primary;
+    }
+  }
+
+  &.active {
+    background: $color-primary;
+
+    .nav-tab__icon svg {
+      color: $color-heading;
+    }
+  }
+}

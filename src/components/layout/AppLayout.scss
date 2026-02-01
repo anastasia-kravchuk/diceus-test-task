@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.app-layout {
+  min-height: 100vh;
+  background-color: $color-bg-main;
+}
+
+.app-layout__main {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.app-layout__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .app-layout__container {
+    padding: 0 16px;
+  }
+}
