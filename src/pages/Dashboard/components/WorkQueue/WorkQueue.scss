@@ -1,0 +1,114 @@
+@use '../../../../styles/variables' as *;
+
+.work-queue {
+  max-width: 960px;
+  background: $color-bg-surface;
+  border: 1px solid $color-main-border;
+  border-radius: $radius-lg;
+  padding: 20px;
+  color: $color-heading;
+  font-weight: 200;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    color: $color-heading;
+  }
+}
+
+.work-queue-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.work-queue-tab {
+  padding: 4px 16px;
+  border-radius: 999px;
+  background: $color-bg-inactive;
+  color: $color-heading;
+  font-weight: 300;
+
+  &--0 {
+    background: $color-primary;
+  }
+}
+
+.work-queue-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: $color-text;
+    padding: 6px 20px;
+    background-color: $color-bg-table-head;
+  }
+
+  td {
+    padding: 12px 0;
+  }
+}
+
+.work-queue-table tbody tr {
+  background: $color-bg-surface;
+
+  &:nth-child(even) {
+    background: $color-bg-table-row;
+    border-top: 1px solid $color-secondary-border;
+    border-bottom: 1px solid $color-secondary-border;
+  }
+}
+.originator {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 5px;
+}
+
+.work-queue-row {
+  &__client-line {
+    line-height: 16px;
+  }
+
+  &__line {
+    color: $color-text;
+    font-weight: 400;
+  }
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status--new::before {
+  background: $color-primary;
+}
+
+.status--pending-review::before {
+  background: $color-yellow;
+}
+
+.status--completed::before {
+  background: $color-green;
+}
+
+.actions {
+  text-align: left;
+}

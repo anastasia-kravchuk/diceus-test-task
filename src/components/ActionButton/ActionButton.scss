@@ -1,0 +1,17 @@
+@use '../../styles/variables.scss' as *;
+
+.row-actions {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: 1px solid $color-heading;
+  color: $color-heading;
+
+  cursor: pointer;
+}

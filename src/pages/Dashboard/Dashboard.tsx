@@ -4,7 +4,7 @@ import { MarketIntelligence } from './components/MarketIntelligence';
 import { MyAccounts } from './components/MyAccounts';
 import { PortfolioGoals } from './components/PortfolioGoals';
 import { QuickActions } from './components/QuickActions';
-import { WorkQueue } from './components/WorkQueue';
+import { WorkQueue } from './components/WorkQueue/WorkQueue';
 
 export const Dashboard = () => {
   const data = useFetch<DashboardData>('/dashboard.json');

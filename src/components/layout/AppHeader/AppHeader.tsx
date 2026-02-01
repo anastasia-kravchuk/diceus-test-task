@@ -1,3 +1,4 @@
+import { Avatar } from '../../Avatar/Avatar';
 import { SearchInput } from '../../SearchInput/SearchInput';
 import './AppHeader.scss';
 
@@ -14,8 +15,8 @@ export const AppHeader = () => {
           </div>
 
           <div className="app-header__right">
-            <SearchInput width="280px" />
-            <div className="app-header__logo">AR</div>
+            <SearchInput width="480px" />
+            <Avatar text="AR" />
           </div>
         </div>
       </header>

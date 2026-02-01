@@ -2,7 +2,8 @@
   "workQueue": {
     "tabs": [
       { "id": "assigned", "label": "Assigned to me", "count": 12 },
-      { "id": "pending", "label": "Pending Review", "count": 8 }
+      { "id": "pending", "label": "Pending Review", "count": 8 },
+      { "id": "referrals", "label": "Referrals", "count": 3 }
     ],
     "items": [
       {
@@ -49,6 +50,15 @@
         "type": "Email",
         "status": "Completed",
         "createdAt": "2025-04-28"
+      },
+      {
+        "id": 6,
+        "originator": { "name": "Me", "initials": "MK" },
+        "client": "Quantumtech Industries",
+        "line": "Product Liabillity",
+        "type": "Email",
+        "status": "Completed",
+        "createdAt": "2025-04-20"
       }
     ]
   },

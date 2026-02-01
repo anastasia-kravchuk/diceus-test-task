@@ -1,4 +1,4 @@
-export type WorkQueueTabId = 'assigned' | 'pending';
+export type WorkQueueTabId = 'assigned' | 'pending' | 'referrals';
 
 export interface WorkQueueTab {
   id: WorkQueueTabId;
