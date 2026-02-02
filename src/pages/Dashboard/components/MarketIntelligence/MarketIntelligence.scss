@@ -1,0 +1,51 @@
+@use '../../../../styles/variables.scss' as *;
+
+.market-intelligence {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: $work-queue-max-width / 4;
+
+  background-color: $color-bg-surface;
+  border: 1px solid $color-main-border;
+  border-radius: $radius-lg;
+  padding: 20px 25px;
+  color: $color-heading;
+
+  &__title {
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item {
+  border-bottom: 1px solid $color-secondary-border;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+
+  &__indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    &--high {
+      background-color: $color-red-market;
+    }
+
+    &--medium {
+      background-color: $color-yellow;
+    }
+
+    &--low {
+      background-color: $color-blue-market;
+    }
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

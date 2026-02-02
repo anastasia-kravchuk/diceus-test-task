@@ -1,6 +1,6 @@
 import { useFetch } from '../../hooks/useFetch';
 import type { DashboardData } from '../../types/dashboard/dashdoard';
-import { MarketIntelligence } from './components/MarketIntelligence';
+import { MarketIntelligence } from './components/MarketIntelligence/MarketIntelligence';
 import { MyAccounts } from './components/MyAccounts';
 import { PortfolioGoals } from './components/PortfolioGoals/PortfolioGoals';
 import { QuickActions } from './components/QuickActions/QuickActions';
