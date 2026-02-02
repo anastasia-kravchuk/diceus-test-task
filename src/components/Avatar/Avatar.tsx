@@ -9,8 +9,8 @@ interface AvatarProps {
 }
 
 export const Avatar = ({
-  width = '40px',
-  height = '40px',
+  width = '50px',
+  height = '50px',
   fontSize = '16px',
   fontWeight,
   text,

@@ -1,0 +1,184 @@
+@use '../../../../styles/variables' as *;
+
+.accounts {
+  background: $color-bg-surface;
+  border: 1px solid $color-main-border;
+  border-radius: $radius-lg;
+  padding: 20px;
+
+  &__header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    color: $color-heading;
+    font-weight: 400;
+  }
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.accounts-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  &__filter {
+    height: 30px;
+    width: 96px;
+    border: 1px solid $color-primary;
+    border-radius: 999px;
+    background: transparent;
+    color: $color-primary;
+
+    &--3 {
+      background-color: $color-primary;
+      color: $color-heading;
+    }
+  }
+}
+
+.accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: $color-heading;
+  font-weight: 200;
+
+  th {
+    background: $color-bg-table-head;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: $color-text;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 14px 20px;
+  }
+
+  tbody tr {
+    background: $color-bg-surface;
+
+    &:nth-child(even) {
+      background: $color-bg-table-row;
+    }
+  }
+}
+
+.accounts-row {
+  line-height: 16px;
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    p:first-child {
+      color: $color-heading;
+    }
+
+    p:last-child {
+      font-size: 14px;
+      color: $color-text;
+    }
+  }
+
+  &__premium {
+    color: $color-primary;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  &_rated-premium {
+  }
+}
+
+.accounts-row__loss-ratio {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.accounts-row__appetite {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: $color-blue-appetite;
+  text-align: center;
+  color: $color-heading;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.accounts-row__status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.accounts-row__status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  &.accounts-row__status--active {
+    background: $color-green;
+  }
+
+  &.accounts-row__status--under-review {
+    background: $color-primary;
+  }
+}
+
+.accounts-row__status-text {
+  font-size: 14px;
+  color: $color-heading;
+}
+
+.accounts-row__triage-score {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.accounts-row__winnability {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid $color-primary;
+  padding: 4px;
+}
+
+.accounts-row__winnability-label {
+  font-size: 12px;
+  font-weight: normal;
+  color: $color-primary;
+  white-space: nowrap;
+}
+
+.winnability-dots {
+  display: flex;
+  gap: 3px;
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $color-primary;
+  }
+}

@@ -5,7 +5,8 @@ interface SearchInputProps {
   onChange?: (value: string) => void;
   placeholder?: string;
   width?: string;
-  height?: string; 
+  height?: string;
+  backgroundColor?: string;
 }
 
 export const SearchInput = ({
@@ -13,12 +14,13 @@ export const SearchInput = ({
   onChange,
   placeholder = 'Search',
   width = '100%',
-  height = '40px',
+  height = '50px',
+  backgroundColor,
 }: SearchInputProps) => {
   return (
     <div
       className="search-input"
-      style={{ width, height }}
+      style={{ width, height, backgroundColor }}
     >
       <input
         type="text"
