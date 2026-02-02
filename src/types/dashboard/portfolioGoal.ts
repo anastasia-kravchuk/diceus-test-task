@@ -6,9 +6,7 @@ interface BasePortfolioGoal {
 
 export type PortfolioGoalStatus =
   | 'Good'
-  | 'On target'
-  | 'At risk'
-  | 'Off target';
+  | 'On target';
 
 export interface GaugeGoal extends BasePortfolioGoal {
   type: 'gauge';

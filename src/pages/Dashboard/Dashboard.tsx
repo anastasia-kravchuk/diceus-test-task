@@ -2,8 +2,8 @@ import { useFetch } from '../../hooks/useFetch';
 import type { DashboardData } from '../../types/dashboard/dashdoard';
 import { MarketIntelligence } from './components/MarketIntelligence';
 import { MyAccounts } from './components/MyAccounts';
-import { PortfolioGoals } from './components/PortfolioGoals';
-import { QuickActions } from './components/QuickActions';
+import { PortfolioGoals } from './components/PortfolioGoals/PortfolioGoals';
+import { QuickActions } from './components/QuickActions/QuickActions';
 import { WorkQueue } from './components/WorkQueue/WorkQueue';
 
 export const Dashboard = () => {
