@@ -117,3 +117,9 @@
 .actions {
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .work-queue-tab {
+    font-size: 12px;
+  }
+}

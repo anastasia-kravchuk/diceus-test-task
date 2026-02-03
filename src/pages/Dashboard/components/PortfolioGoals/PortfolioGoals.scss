@@ -1,0 +1,170 @@
+@use '../../../../styles/variables.scss' as *;
+
+.portfolio-goals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  max-width: $work-queue-max-width / 4;
+
+  background-color: $color-bg-surface;
+  border: 1px solid $color-main-border;
+  border-radius: $radius-lg;
+  padding: 20px 20px 65px;
+  color: $color-heading;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.portfolio-goal {
+  &__label {
+    font-weight: 300;
+    color: $color-text;
+    white-space: nowrap;
+  }
+  &__target-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+
+    &--retation {
+      margin-bottom: 5px;
+    }
+  }
+  &__target {
+    font-size: 10px;
+    color: $color-text;
+  }
+
+  &__target-triangle {
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $color-primary;
+    border-radius: 20px;
+  }
+
+  &__gauge-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__gauge {
+    border-radius: 999px;
+    height: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &--loss-ratio {
+      width: 100%;
+      background: linear-gradient(
+        to right,
+        $color-green 0%,
+        $color-green 48%,
+        $color-yellow 48%,
+        $color-yellow 70%,
+        $color-red-portfolio 70%,
+        $color-red-portfolio 100%
+      );
+    }
+
+    &--retention {
+      width: 100%;
+      background: linear-gradient(
+        to right,
+        $color-red-portfolio 0%,
+        $color-red-portfolio 15%,
+        $color-yellow 15%,
+        $color-yellow 50%,
+        $color-green 50%,
+        $color-green 65%,
+        $color-yellow 65%,
+        $color-yellow 100%
+      );
+    }
+  }
+
+  &__gauge-indicator {
+    font-size: 12px;
+    position: absolute;
+    &--loss-ratio {
+      transform: translateX(-88%);
+    }
+
+    &--retation {
+      transform: translateX(-310%);
+    }
+  }
+
+  &__status-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &--retation {
+      position: relative;
+      left: 120px;
+      margin-top: 5px;
+    }
+  }
+  &__status-triangle {
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $color-green;
+    border-radius: 20px;
+  }
+  &__status {
+    font-size: 10px;
+    color: $color-green;
+    text-transform: uppercase;
+  }
+
+  &__progress-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__progress {
+    height: 25px;
+    position: relative;
+    width: 100%;
+    background-color: $color-bg-table-head;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+  }
+  &__current {
+    font-size: 12px;
+    position: absolute;
+    left: 70px;
+  }
+  &__progress-fill {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+    background: linear-gradient(90deg, #3b5998 0%, #3f83f8 100%);
+  }
+  &__progress-target {
+    font-size: 14px;
+  }
+  &__percentage {
+    font-size: 10px;
+    color: $color-text;
+    text-align: center;
+  }
+}
