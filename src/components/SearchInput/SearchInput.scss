@@ -7,6 +7,14 @@
   border-radius: $radius-lg;
   padding: 0 16px;
 
+  &--header {
+    height: 50px;
+    width: 380px;
+  }
+
+  &--table {
+    background-color: $color-bg-table-row;
+  }
   input {
     width: 100%;
     height: 100%;
@@ -18,5 +26,11 @@
     &::placeholder {
       color: $color-text;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input--header {
+    width: 280px;
   }
 }

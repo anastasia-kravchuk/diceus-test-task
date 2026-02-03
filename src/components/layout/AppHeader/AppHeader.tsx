@@ -8,14 +8,11 @@ export const AppHeader = () => {
       <header className="app-header">
         <div className="app-header__container">
           <div className="app-header__left">
-            <h1>
-              Hi Arthur, welcome! <br className="app-header__brake" /> You have
-              12 open tasks.
-            </h1>
+            <h1>Hi Arthur, welcome! You have 12 open tasks.</h1>
           </div>
 
           <div className="app-header__right">
-            <SearchInput width="480px" />
+            <SearchInput className="search-input--header" />
             <Avatar text="AR" />
           </div>
         </div>

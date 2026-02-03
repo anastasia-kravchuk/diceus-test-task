@@ -9,11 +9,7 @@ const FILTERS = [
 export const AccountsFilters = () => {
   return (
     <div className="accounts-filters">
-      <SearchInput
-        width="200px"
-        height="30px"
-        backgroundColor="#222737"
-      />
+      <SearchInput className="search-input--table" />
 
       {FILTERS.map((item, index) => (
         <button
