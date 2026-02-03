@@ -43,10 +43,15 @@
   }
 }
 
-.work-queue-table {
+.table-wrapper {
   width: 100%;
-  border-collapse: collapse;
+  overflow-x: auto;
+}
 
+.work-queue-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
   th {
     text-align: left;
     text-transform: uppercase;
@@ -55,10 +60,12 @@
     color: $color-text;
     padding: 6px 20px;
     background-color: $color-bg-table-head;
+    white-space: nowrap;
   }
 
   td {
-    padding: 12px 0;
+    padding: 12px 20px;
+    white-space: nowrap;
   }
 }
 

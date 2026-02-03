@@ -1,0 +1,61 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'work work portfolio quick'
+      'work work portfolio market';
+    gap: 15px;
+  }
+
+  &__work-queue {
+    grid-area: work;
+  }
+
+  &__portfolio {
+    grid-area: portfolio;
+  }
+
+  &__right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__quick {
+    grid-area: quick;
+  }
+
+  &__market {
+    grid-area: market;
+  }
+}
+
+.dashboard__grid > * {
+  min-width: 0;
+}
+
+@media (max-width: 1200px) {
+  .dashboard__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'work work'
+      'portfolio quick'
+      'portfolio market';
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'work'
+      'portfolio'
+      'quick'
+      'market';
+  }
+}
