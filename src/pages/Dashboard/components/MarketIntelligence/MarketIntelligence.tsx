@@ -11,8 +11,13 @@ export const MarketIntelligence = ({ data }: MarketIntelligenceProps) => {
       <h2 className="market-intelligence__title">Market intelligence</h2>
       <div className="market-intelligence__items">
         {data.map((item) => (
-          <div className="item">
-            <div className={`item__indicator item__indicator--${item.severity.toLocaleLowerCase()}`}></div>
+          <div
+            className="item"
+            key={item.id}
+          >
+            <div
+              className={`item__indicator item__indicator--${item.severity.toLocaleLowerCase()}`}
+            ></div>
             <p className="item__text">{item.text}</p>
           </div>
         ))}
