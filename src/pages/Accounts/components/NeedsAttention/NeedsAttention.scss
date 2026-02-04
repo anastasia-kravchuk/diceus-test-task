@@ -1,0 +1,63 @@
+@use '../../../../styles/variables.scss' as *;
+
+.attention {
+  background-color: $color-bg-surface;
+  border: 1px solid $color-yellow;
+  border-radius: $radius-lg;
+  width: 40%;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: fit-content;
+
+  &__label-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+  }
+  &__icon {
+    color: $color-yellow;
+    flex-shrink: 0;
+  }
+  &__label {
+    color: $color-yellow;
+    white-space: nowrap;
+  }
+  &__content {
+    display: flex;
+    gap: 20px;
+  }
+}
+.attention-item {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    color: $color-heading;
+    font-weight: 200;
+  }
+  &__status {
+    color: $color-text;
+    font-size: 12px;
+  }
+  &__link {
+    display: flex;
+    color: $color-primary;
+    font-size: 14px;
+  }
+  &__arrow {
+    margin-left: 5px;
+    width: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .attention {
+    &__content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
