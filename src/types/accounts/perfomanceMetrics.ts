@@ -1,11 +1,14 @@
 export interface WinnabilitySummary {
   score: number;
   label: string;
+  actionLabel: string;
+  actionUrl: string;
 }
-
 export interface LossRatioMetric {
   current: number;
   target: number;
+  actionLabel: string;
+  actionUrl: string;
 }
 
 export interface PremiumGrowthMetric {
@@ -13,6 +16,8 @@ export interface PremiumGrowthMetric {
   label: string;
   currentValue: number;
   targetValue: number;
+  actionLabel: string;
+  actionUrl: string;
 }
 
 export interface ExposureItem {

@@ -34,17 +34,23 @@
   "performanceMetrics": {
     "winnability": {
       "score": 4,
-      "label": "Very Strong"
+      "label": "Very Strong",
+      "actionLabel": "See all factors",
+      "actionUrl": "#"
     },
     "lossRatio": {
       "current": 25,
-      "target": 42
+      "target": 42,
+      "actionLabel": "View history",
+      "actionUrl": "#"
     },
     "premiumGrowth": {
       "percentage": 12.4,
       "label": "YoY increase",
       "currentValue": 123000000,
-      "targetValue": 150000000
+      "targetValue": 150000000,
+      "actionLabel": "View trend",
+      "actionUrl": "#"
     },
     "exposureDistribution": [
       { "label": "Marine Cargo", "value": 71.4 },
