@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Dashboard } from './pages/Dashboard/Dashboard';
-import { Account } from './pages/Account';
+import { Accounts } from './pages/Accounts/Accounts';
 import { NotFound } from './pages/NotFound';
 import { AppLayout } from './components/layout/AppLayout';
 
@@ -14,7 +14,7 @@ function App() {
         />
         <Route
           path="/accounts"
-          element={<Account />}
+          element={<Accounts />}
         />
       </Route>
 
